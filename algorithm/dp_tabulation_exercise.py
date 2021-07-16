@@ -20,6 +20,7 @@ def max_profit(price_list, count):
             profit = max(profit, profit_table[j] + profit_table[i - j])
 
         profit_table.append(profit)
+        print(profit_table)
 
     return profit_table[count]
 
